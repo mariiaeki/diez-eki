@@ -31,13 +31,6 @@ body{
   box-sizing: border-box;
 }
 
-header{
-  background-color: yellow;
-}
-
-#about{
-  background-color: blue;
-}
 
 #directions{
   background-color: yellow;
@@ -57,4 +50,10 @@ header{
 
 footer{
   background-color: yellow;
+}
+
+.head-bg{
+  background-image: url(img/bg_main.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
