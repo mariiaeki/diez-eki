@@ -35,6 +35,7 @@
     background-image: url(img/bg_main.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
   }
 
   header,
@@ -55,9 +56,12 @@
     max-width: 1280px;
     margin: auto;
     padding: 30px 15px;
+    display: flex;
+    align-items: center;
   }
 
-  .about-inner{
+  .about-innerб
+  .contacts-inner{
     max-width: 1280px;
     margin: auto;
     padding: 30px 15px;
@@ -70,12 +74,20 @@
     padding: 30px 15px;
   }
 
-  .dir-title{
+  .concerts-inner{
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 15px;
+  }
+
+  .dir-title,
+  .concerts-title{
     position: absolute;
     color: black;
     font-size: 36px;
     font-family: 'Prata', serif;
-    left: 0;
+    left: 15px;
     top: 0;
     border-top: 2px solid #eec643;
     border-bottom: 2px solid #eec643;
@@ -83,10 +95,8 @@
     transform: rotate(-90deg) translateX(-110%);
   }
 
-  .dir-title h2,
-  .adv-title h2{
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .concerts-title{
+    transform: rotate(-90deg) translateX(-135%);
   }
 
   .adv-title{
@@ -147,6 +157,15 @@
     height: 560px;
   }
 
+  .conc-inner-big{
+    height: 570px;
+  }
+
+  .conc-inner-small{
+    height: 170px;
+    margin-bottom: 30px;
+  }
+
   .nav-main{
     margin-left: auto;
   }
@@ -181,7 +200,7 @@
     font-size: 20px;
     letter-spacing: 1px;
     padding: 1.5rem;
-    margin-top: 70px;
+    /*margin-top: 50px;*/
     width: 100%;
   }
 
@@ -189,14 +208,6 @@
   .about-submit{
     background: black;
   }
-  .adv-submit{
-    background-color: #eec643;
-  }
-
-  .adv-form p{
-    margin-bottom:  120px;
-  }
-
 
   input[type="text"],
   select{
@@ -206,7 +217,8 @@
     color: #596063;
     font-size: 20px;
     padding: 10px;
-    /*width: 100%;*/
+    width: 90%;
+    margin: 0 auto;
   }
 
   select{
@@ -218,18 +230,35 @@
     border-bottom: 1px solid #eec643;
   }
 
-  fieldset{
+  form{
+    position: relative;
+  }
+
+  .adv-submit{
+    background-color: #eec643;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .fieldset{
     border: transparent;
     height: 100%;
+    padding: 30px;
+    padding-top: 0;
   }
 
-  fieldset h3{
+  .fieldset h3{
+    width: 200px;
     margin-top: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  fieldset p{
-    padding-left: 20px;
+  .fieldset p{
+    padding-left: 0;
     margin-bottom: 20px;
   }
 
@@ -241,6 +270,11 @@
     width: 700px;
   }
 
+  h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   h3{
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
@@ -250,7 +284,7 @@
   }
 
   p{
-    width: 210px;
+    width: 200px;
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     padding-left: 30px;
