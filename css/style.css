@@ -159,16 +159,20 @@
 
   .dir-inner{
     height: 268px;
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
   }
 
   .adv-inner-small{
     color: #FFF;
     height: 460px;
+    background-repeat: no-repeat;
   }
 
   .adv-inner-big{
     color: #FFF;
     height: 560px;
+    background-repeat: no-repeat;
   }
 
   .adv-inner-form{
