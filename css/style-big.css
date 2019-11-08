@@ -1,0 +1,278 @@
+@media (min-width: 1280px){
+  footer{
+    display: block;
+  }
+
+  header,
+  footer,
+  section{
+    margin: 0 40px;
+  }
+
+  .head-bg{
+    background-image: url(img/bg_main.jpg);
+  }
+
+  .footer-inner{
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-name-foo{
+    color: #eec643;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+  }
+
+  .header-inner{
+    max-width: 1280px;
+    padding: 30px 15px;
+  }
+
+  .button-burger{
+    display: none;
+  }
+
+  .nav-main{
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-item{
+    display: inline-block;
+    margin-left: 28px;
+  }
+
+  .nav-item a{
+    text-decoration: none;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .h1-desktop{
+    display: block;
+  }
+
+  .h1-mobile{
+    display: none;
+  }
+
+  .links{
+    margin-left: auto;
+  }
+
+  .links-item{
+    display: inline-block;
+    margin-left: 28px;
+  }
+
+  .links-item a{
+    text-decoration: none;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+
+  .about-inner,
+  .directions-inner,
+  .adv-inner,
+  .concerts-inner,
+  .contacts-inner{
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+
+  .dir-title,
+  .concerts-title{
+    position: absolute;
+    font-size: 36px;
+    left: 15px;
+    top: 0;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateX(-110%);
+  }
+
+
+  .concerts-title{
+    transform: rotate(-90deg) translateX(-135%);
+  }
+
+  .adv-title,
+  .contacts-title{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font-size: 36px;
+    font-family: 'Prata', serif;
+    margin-left: 15px;
+    padding-right:  200px;
+    border-top: 2px solid #eec643;
+    border-bottom: 2px solid #eec643;
+  }
+
+  .contacts-lil-title{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+  }
+
+  .adv-row,
+  .cont-row{
+    align-items: flex-end;
+  }
+
+  .col--lg-1 { width: 25%; }
+  .col--lg-2 { width: 50%; }
+  .col--lg-3 { width: 75%; }
+  .col--lg-4 { width: 100%; }
+  .col--lg-s-none {
+    display: block;
+  }
+
+  .left{
+    padding-left: 96px;
+  }
+
+  .dir-inner{
+    height: 268px;
+  }
+
+  form{
+    position: relative;
+    display: block;
+  }
+
+  .first-lesson,
+  .first-lesson-horz{
+    display: none;
+  }
+
+  .adv-inner-small{
+    height: 460px;
+   /* background-repeat: no-repeat;
+    background-size: 100%;
+    */
+  }
+
+  .adv-inner-big{
+    color: #FFF;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+
+  .adv-inner-form{
+    height: 560px;
+  }
+
+  .conc-inner-big{
+    height: 570px;
+  }
+
+  .conc-inner-small{
+    height: 170px;
+    margin-bottom: 30px;
+  }
+
+  .contacts-inner-form{
+    height: 560px;
+  }
+
+  .about-form{
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(251,246,229,0.85);
+  }
+
+  .adv-form,
+  .conc-form{
+    color: black;
+    border: 1px solid #eec643;
+    height: 100%;
+  }
+
+  .adv-form h3,
+  .conc-form h3{
+    color: #eec643;
+  }
+
+  input[type="submit"]{
+    color: white;
+    border: transparent;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 1.5rem;
+    /*margin-top: 50px;*/
+    width: 100%;
+  }
+
+
+  .about-submit{
+    background: black;
+  }
+
+  input[type="text"],
+  select{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid black;
+    color: #596063;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  select{
+    width: 100%;
+  }
+
+  .adv-form input[type="text"],
+  .adv-form select,
+  .conc-form input[type="text"],
+  .conc-form select{
+    border-bottom: 1px solid #eec643;
+  }
+
+
+
+  .adv-submit{
+    background-color: #eec643;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .fieldset{
+    border: transparent;
+    height: 100%;
+    padding: 30px;
+    padding-top: 0;
+  }
+
+  .fieldset h3{
+    width: 200px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .fieldset p{
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+}
