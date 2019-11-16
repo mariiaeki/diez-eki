@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <!--   <link rel="stylesheet" href="css/style-big.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
   <link rel="icon" href="css/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -195,7 +197,8 @@
       <section id="concerts">
         <div class="concerts-inner">
           <div class="concerts-title"><h2>В стенах школы</h2></div>
-          <div class="row">
+
+          <div class="row video-big">
             <div class="col col--lg-3 left">
               <div class="conc-inner-big"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aBo5DxhJ12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
@@ -205,6 +208,14 @@
               <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/iWoHFzMdIMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
           </div>
+
+          <div class="video-small">
+              <div><iframe min-width="320px" height="300px" src="https://www.youtube.com/embed/aBo5DxhJ12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div><iframe min-width="320px" height="300px" src="https://www.youtube.com/embed/ofstT2S2Oi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div><iframe min-width="320px" height="300px" src="https://www.youtube.com/embed/t9Ihsnsy3OY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div><iframe min-width="320px" height="300px" src="https://www.youtube.com/embed/iWoHFzMdIMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          </div>
+
         </div>
 
       </section>
@@ -263,16 +274,10 @@
         </div>
       </footer>
 
-      <script type="text/javascript">
-        var toggler = document.getElementById('toggler');
-        toggler.addEventListener('click', mainNavVisibleToggle);
-        function mainNavVisibleToggle(e) {
-          e.preventDefault();
-          toggler.classList.toggle('toggler--close');
-          document.getElementById('nav-main').classList.toggle('nav-main--visible');
-        }
+      <script src="js/jquery-3.4.1.min.js" ></script>
+      <script type="text/javascript" src="js/slick.js"></script>
 
-      </script>
+      <script type="text/javascript" src="js/javascript.js"></script>
 
     </body>
     </html>

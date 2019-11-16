@@ -358,6 +358,10 @@
       display: none;
     }
 
+    .video-big{
+      display: none;
+    }
+
 
     @media (min-width: 1280px){
       footer{
@@ -680,6 +684,14 @@
 
   .toggler{
     display: none;
+  }
+
+  .video-small{
+    display: none;
+  }
+
+  .video-big{
+    display: flex;
   }
 
 
