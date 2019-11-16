@@ -156,6 +156,18 @@
     display: none;
   }
 
+  .lil-view{
+    display: none;
+  }
+
+  .all-dir-big{
+    display: block;
+  }
+
+  .all-dir-small{
+    display: none;
+  }
+
   .adv-inner-small{
     height: 460px;
    /* background-repeat: no-repeat;
@@ -273,6 +285,34 @@
   .fieldset p{
     padding-left: 0;
     margin-bottom: 20px;
+  }
+
+  h1{
+    font-size: 55px;
+  }
+
+  h2{
+    font-size: 55px;
+  }
+
+  h3{
+    padding-bottom: 30px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .big-p{
+    display: block;
+  }
+
+  .lil-p{
+    display: none;
+  }
+
+  .lil-map{
+    margin-top: 0px;
   }
 
 }
