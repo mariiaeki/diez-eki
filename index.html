@@ -5,7 +5,7 @@
   <title>Diez-eki</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-<!--   <link rel="stylesheet" href="css/style-big.css"> -->
+  <!--   <link rel="stylesheet" href="css/style-big.css"> -->
   <link rel="icon" href="css/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,7 +17,7 @@
 
         <span class="logo-name">Diez</span>
 
-        <nav class="nav-main">
+        <nav class="nav-main" id="nav-main">
           <ul class="nav-list">
             <li class="nav-item"><a href="#directions">Направления</a></li>
             <li class="nav-item"><a href="#advantages">О школе</a></li>
@@ -26,7 +26,9 @@
           </ul>
         </nav>
 
-        <div class="button-burger"></div>
+        <!-- <div class="button-burger"></div> -->
+
+        <a href="" class="toggler" id="toggler"><span></span></a>
 
 
       </div>
@@ -90,175 +92,187 @@
               <h3>Вокал</h3>
               <p class="big-p">Академический урок, эстардный, джазовый</p>
               <p class="lil-p"><Пой, как Селин Дион и Эми Вайнхаус/p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col col--lg-s-3 col--lg-2 left">
-            <div class="dir-inner" style="background-image: url(css/img/directions_piano.jpg);">
-              <h3>Фортепиано</h3>
-              <p class="big-p">Академический урок, эстардный, джазовый</p>
-              <p class="lil-p">Чувствуй клавиши, как Людовико Эйнауди</p>
+          <div class="row">
+            <div class="col col--lg-s-3 col--lg-2 left">
+              <div class="dir-inner" style="background-image: url(css/img/directions_piano.jpg);">
+                <h3>Фортепиано</h3>
+                <p class="big-p">Академический урок, эстардный, джазовый</p>
+                <p class="lil-p">Чувствуй клавиши, как Людовико Эйнауди</p>
+              </div>
             </div>
-          </div>
-          <div class="col col--lg-s-none col--lg-1">
-            <div class="dir-inner" style="background-image: url(css/img/directions_lections.jpg);">
-              <h3>Лекции</h3>
-              <p>Подтяни свои знания в теории музыки</p>
+            <div class="col col--lg-s-none col--lg-1">
+              <div class="dir-inner" style="background-image: url(css/img/directions_lections.jpg);">
+                <h3>Лекции</h3>
+                <p>Подтяни свои знания в теории музыки</p>
+              </div>
             </div>
-          </div>
-          <div class="col col--lg-s-1 col--lg-1 all-dir-big">
-            <div class="dir-inner" style="background-color: #eec643">
-              <h3>Все направления</h3>
+            <div class="col col--lg-s-1 col--lg-1 all-dir-big">
+              <div class="dir-inner" style="background-color: #eec643">
+                <h3>Все направления</h3>
+              </div>
             </div>
-          </div>
-           <div class="col col--lg-s-1 col--lg-1 all-dir-small">
-            <div class="dir-inner" style="background-color: #eec643">
-              <h3 class="lil-transform">Все направления</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-
-    <section id="advantages">
-      <div class="adv-inner">
-
-        <div class="adv-title">
-          <h2>Задаем темп</h2>
-        </div>
-
-        <div class="row adv-row">
-
-
-          <div class="col col--lg-s-4 col--lg-1">
-            <div class="adv-inner-small" style="background-image: url(css/img/advantages_staff.jpg);">
-              <h3>Состав</h3>
-              <p class="big-p">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
-              <p class="lil-p">Учись только у профессионалов</p>
-            </div>
-          </div>
-          <div class="col col--lg-s-4 col--lg-1">
-            <div class="adv-inner-small" style="background-image: url(css/img/advantages_results.jpg);">
-              <h3>Результат</h3>
-              <p class="big-p">Выступи на отчетном концерте через три месяца обчуения</p>
-              <p class="lil-p">Выступай на отчетных концертах</p>
-            </div>
-          </div>
-          <div class="col col--lg-s-3 col--lg-1">
-            <div class="adv-inner-big" style="background-image: url(css/img/advantages_studio.jpg);">
-              <h3>Студия</h3>
-              <p class="big-p">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-              <p class="lil-p">Записывай песни каждый месяц</p>
-            </div>
-          </div>
-
-          <div class="col col--lg-s-1 lil-view">
-            <div class=" adv-inner-small">
-              <h3 class="lil-transform">Вводный урок</h3>
-            </div>
-          </div>
-
-          <div class="col col--lg-1">
-            <div class="adv-inner-form">
-              <form action="" method="post" class="adv-form">
-                <div class="fieldset">
-                  <h3>Вводный урок</h3>
-                  <p>Попробуй любые направления бесплатно</p>
-                  <input type="text" name="name" id="client-name" placeholder="Имя">
-                  <input type="text" name="surname" id="client-surname" placeholder="Фамилия">
-
-                  <select name="directions-list">
-                    <option>Направления</option>
-                    <option>Гитара</option>
-                    <option>Фортепиано</option>
-                    <option>Вокал</option>
-                  </select>
-
-                </div>
-                <input type="submit" value="ЗАПИСАТЬСЯ" class="adv-submit">
-
-              </form>
+            <div class="col col--lg-s-1 col--lg-1 all-dir-small">
+              <div class="dir-inner" style="background-color: #eec643">
+                <h3 class="lil-transform">Все направления</h3>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-    </section>
+
+      </section>
 
 
-    <section id="concerts">
-      <div class="concerts-inner">
-        <div class="concerts-title"><h2>В стенах школы</h2></div>
-        <div class="row">
-          <div class="col col--lg-3 left">
-            <div class="conc-inner-big"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aBo5DxhJ12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <section id="advantages">
+        <div class="adv-inner">
+
+          <div class="adv-title">
+            <h2>Задаем темп</h2>
           </div>
-          <div class="col col--lg-1">
-            <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ofstT2S2Oi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/t9Ihsnsy3OY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/iWoHFzMdIMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+          <div class="row adv-row">
+
+
+            <div class="col col--lg-s-4 col--lg-1">
+              <div class="adv-inner-small" style="background-image: url(css/img/advantages_staff.jpg);">
+                <h3>Состав</h3>
+                <p class="big-p">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+                <p class="lil-p">Учись только у профессионалов</p>
+              </div>
+            </div>
+            <div class="col col--lg-s-4 col--lg-1">
+              <div class="adv-inner-small" style="background-image: url(css/img/advantages_results.jpg);">
+                <h3>Результат</h3>
+                <p class="big-p">Выступи на отчетном концерте через три месяца обчуения</p>
+                <p class="lil-p">Выступай на отчетных концертах</p>
+              </div>
+            </div>
+            <div class="col col--lg-s-3 col--lg-1">
+              <div class="adv-inner-big" style="background-image: url(css/img/advantages_studio.jpg);">
+                <h3>Студия</h3>
+                <p class="big-p">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+                <p class="lil-p">Записывай песни каждый месяц</p>
+              </div>
+            </div>
+
+            <div class="col col--lg-s-1 lil-view">
+              <div class=" adv-inner-small">
+                <h3 class="lil-transform">Вводный урок</h3>
+              </div>
+            </div>
+
+            <div class="col col--lg-1">
+              <div class="adv-inner-form">
+                <form action="" method="post" class="adv-form">
+                  <div class="fieldset">
+                    <h3>Вводный урок</h3>
+                    <p>Попробуй любые направления бесплатно</p>
+                    <input type="text" name="name" id="client-name" placeholder="Имя">
+                    <input type="text" name="surname" id="client-surname" placeholder="Фамилия">
+
+                    <select name="directions-list">
+                      <option>Направления</option>
+                      <option>Гитара</option>
+                      <option>Фортепиано</option>
+                      <option>Вокал</option>
+                    </select>
+
+                  </div>
+                  <input type="submit" value="ЗАПИСАТЬСЯ" class="adv-submit">
+
+                </form>
+              </div>
+            </div>
           </div>
+
         </div>
-      </div>
-
-    </section>
+      </section>
 
 
-    <section id="contacts">
-      <div class="contacts-inner">
-        <div class="contacts-title">Ждем тебя</div>
-        <span class="contacts-lil-title">СПб, 6-ая линия В.О. 42 <br> +7 (812) 566 56 56</span>
-
-        <div class="row cont-row">
-          <div class="col col--lg-s-4 col--lg-3">
-            <div class="map lil-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3870868216352!2d30.277478015621334!3d59.942311981877474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631243c7656b3%3A0x835a1d9a08b6799!2zNi3RjyDQu9C40L0uINCSLtCeLiwgNDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1572950012000!5m2!1sru!2sru" width="100%" height="460px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
-          </div>
-
-          <div class="first-lesson-horz col col--lg-s-4">Вводный урок</div>
-
-          <div class="col col--lg-1">
-            <div class="contacts-inner-form">
-              <form action="" method="post" class="conc-form">
-                <div class="fieldset">
-                  <h3>Вводный урок</h3>
-                  <p>Попробуй любые направления бесплатно</p>
-                  <input type="text" name="name" id="client-name" placeholder="Имя">
-                  <input type="text" name="surname" id="client-surname" placeholder="Фамилия">
-
-                  <select name="directions-list">
-                    <option>Направления</option>
-                    <option>Гитара</option>
-                    <option>Фортепиано</option>
-                    <option>Вокал</option>
-                  </select>
-
-                </div>
-                <input type="submit" value="ЗАПИСАТЬСЯ" class="adv-submit">
-
-              </form>
+      <section id="concerts">
+        <div class="concerts-inner">
+          <div class="concerts-title"><h2>В стенах школы</h2></div>
+          <div class="row">
+            <div class="col col--lg-3 left">
+              <div class="conc-inner-big"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aBo5DxhJ12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="col col--lg-1">
+              <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ofstT2S2Oi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/t9Ihsnsy3OY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div class="conc-inner-small"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/iWoHFzMdIMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+      </section>
 
 
-    <footer>
-      <div class="footer-inner">
-      <span class="logo-name-foo">Diez</span>
-      <div class="links">
-        <ul class="links-list">
-          <li class="links-item"><a href="#">Youtube</a></li>
-          <li class="links-item"><a href="#">Instagram</a></li>
-          <li class="links-item"><a href="#">Facebook</a></li>
-          <li class="links-item"><a href="#">Vkontakte</a></li>
-        </ul>
-      </div>
-      </div>
-    </footer>
-  </body>
-  </html>
+      <section id="contacts">
+        <div class="contacts-inner">
+          <div class="contacts-title">Ждем тебя</div>
+          <span class="contacts-lil-title">СПб, 6-ая линия В.О. 42 <br> +7 (812) 566 56 56</span>
+
+          <div class="row cont-row">
+            <div class="col col--lg-s-4 col--lg-3">
+              <div class="map lil-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3870868216352!2d30.277478015621334!3d59.942311981877474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631243c7656b3%3A0x835a1d9a08b6799!2zNi3RjyDQu9C40L0uINCSLtCeLiwgNDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1572950012000!5m2!1sru!2sru" width="100%" height="460px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            </div>
+
+            <div class="first-lesson-horz col col--lg-s-4">Вводный урок</div>
+
+            <div class="col col--lg-1">
+              <div class="contacts-inner-form">
+                <form action="" method="post" class="conc-form">
+                  <div class="fieldset">
+                    <h3>Вводный урок</h3>
+                    <p>Попробуй любые направления бесплатно</p>
+                    <input type="text" name="name" id="client-name" placeholder="Имя">
+                    <input type="text" name="surname" id="client-surname" placeholder="Фамилия">
+
+                    <select name="directions-list">
+                      <option>Направления</option>
+                      <option>Гитара</option>
+                      <option>Фортепиано</option>
+                      <option>Вокал</option>
+                    </select>
+
+                  </div>
+                  <input type="submit" value="ЗАПИСАТЬСЯ" class="adv-submit">
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer>
+        <div class="footer-inner">
+          <span class="logo-name-foo">Diez</span>
+          <div class="links">
+            <ul class="links-list">
+              <li class="links-item"><a href="#">Youtube</a></li>
+              <li class="links-item"><a href="#">Instagram</a></li>
+              <li class="links-item"><a href="#">Facebook</a></li>
+              <li class="links-item"><a href="#">Vkontakte</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+        var toggler = document.getElementById('toggler');
+        toggler.addEventListener('click', mainNavVisibleToggle);
+        function mainNavVisibleToggle(e) {
+          e.preventDefault();
+          toggler.classList.toggle('toggler--close');
+          document.getElementById('nav-main').classList.toggle('nav-main--visible');
+        }
+
+      </script>
+
+    </body>
+    </html>

@@ -46,6 +46,7 @@
   }
 
   .header-inner{
+    position: relative;
     min-width: 295px;
     margin: auto;
     padding: 20px 10px;
@@ -64,11 +65,102 @@
     display: none;
   }
 
-  .button-burger{
-    width: 28px;
-    height: 28px;
-    border: 2px solid red;
+  .nav-main--visible{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 400%;
+    width: 100%;
+    background-color: black;
+    display: block;
   }
+
+  .nav-list{
+    padding-left: 15px;
+  }
+
+  .nav-item{
+    display: block;
+    margin-left: 15px;
+    padding: 20px;
+  }
+
+  .nav-item a{
+    text-decoration: none;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .toggler {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    user-select: none;
+  }
+
+  .toggler > span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    height: .3rem;
+    background: #fff;
+    border-radius: .2rem;
+    position: relative;
+    transition: background .3s .5s;
+  }
+
+  .toggler > span:before,
+  .toggler > span:after {
+    width: 100%;
+    height: .3rem;
+    background: #fff;
+    border-radius: .2rem;
+    position: absolute;
+    left: 0;
+    content: '';
+    transform-origin: 50% 50%;
+    transition: top .3s .6s, transform .3s;
+  }
+
+  .toggler > span:before {
+    top: 1rem;
+  }
+
+  .toggler > span:after {
+    top: -1rem;
+  }
+
+
+  .toggler--close > span {
+    transition: background .3s 0;
+    background: transparent;
+  }
+
+  .toggler--close > span:before,
+  .toggler--close > span:after {
+    transition: top .3s, transform .3s .5s;
+    top: 0;
+  }
+
+  .toggler--close > span:before {
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+
+  .toggler--close > span:after {
+    transform: rotate3d(0, 0, 1, -45deg);
+  }
+
 
   .h1-desktop{
     display: none;
@@ -249,196 +341,198 @@
 /*
   .directions-inner p{
     width: 60%;
-  }*/
+    }*/
 
-  .lil-transform{
-    position: absolute;
-    transform: rotate(270deg);
-    color: black;
-    font-size: 16px;
-    padding: 0;
-    bottom: 50px;
-    left: -15px;
+    .lil-transform{
+      position: absolute;
+      transform: rotate(270deg);
+      color: black;
+      font-size: 16px;
+      padding: 0;
+      bottom: 50px;
+      left: -15px;
 
-  }
+    }
 
-  .big-p{
-    display: none;
-  }
-
-
-@media (min-width: 1280px){
-  footer{
-    display: block;
-  }
-
-  header,
-  footer,
-  section{
-    margin: 0 40px;
-  }
-
-  .head-bg{
-    background-image: url(img/bg_main.jpg);
-  }
-
-  .footer-inner{
-    max-width: 1280px;
-    margin: auto;
-    padding: 30px 15px;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-name-foo{
-    color: #eec643;
-    font-family: 'Prata', serif;
-    font-size: 20px;
-  }
-
-  .header-inner{
-    max-width: 1280px;
-    padding: 30px 15px;
-  }
-
-  .button-burger{
-    display: none;
-  }
-
-  .nav-main{
-    display: block;
-    margin-left: auto;
-  }
-
-  .nav-item{
-    display: inline-block;
-    margin-left: 28px;
-  }
-
-  .nav-item a{
-    text-decoration: none;
-    color: black;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  .h1-desktop{
-    display: block;
-  }
-
-  .h1-mobile{
-    display: none;
-  }
-
-  .links{
-    margin-left: auto;
-  }
-
-  .links-item{
-    display: inline-block;
-    margin-left: 28px;
-  }
-
-  .links-item a{
-    text-decoration: none;
-    color: black;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
+    .big-p{
+      display: none;
+    }
 
 
-  .about-inner,
-  .directions-inner,
-  .adv-inner,
-  .concerts-inner,
-  .contacts-inner{
-    position: relative;
-    max-width: 1280px;
-    margin: auto;
-  }
+    @media (min-width: 1280px){
+      footer{
+        display: block;
+      }
+
+      header,
+      footer,
+      section{
+        margin: 0 40px;
+      }
+
+      .head-bg{
+        background-image: url(img/bg_main.jpg);
+      }
+
+      .footer-inner{
+        max-width: 1280px;
+        margin: auto;
+        padding: 30px 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo-name-foo{
+        color: #eec643;
+        font-family: 'Prata', serif;
+        font-size: 20px;
+      }
+
+      .header-inner{
+        max-width: 1280px;
+        padding: 30px 15px;
+      }
+
+      .button-burger{
+        display: none;
+      }
+
+      .nav-main{
+        position: static;
+        display: block;
+        margin-left: auto;
+      }
+
+      .nav-item{
+        display: inline-block;
+        margin-left: 28px;
+        padding: 0;
+      }
+
+      .nav-item a{
+        text-decoration: none;
+        color: black;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      .h1-desktop{
+        display: block;
+      }
+
+      .h1-mobile{
+        display: none;
+      }
+
+      .links{
+        margin-left: auto;
+      }
+
+      .links-item{
+        display: inline-block;
+        margin-left: 28px;
+      }
+
+      .links-item a{
+        text-decoration: none;
+        color: black;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
 
 
-  .dir-title,
-  .concerts-title{
-    position: absolute;
-    font-size: 36px;
-    left: 15px;
-    top: 0;
-    transform-origin: 0 0;
-    transform: rotate(-90deg) translateX(-110%);
-  }
+      .about-inner,
+      .directions-inner,
+      .adv-inner,
+      .concerts-inner,
+      .contacts-inner{
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+      }
 
 
-  .concerts-title{
-    transform: rotate(-90deg) translateX(-135%);
-  }
+      .dir-title,
+      .concerts-title{
+        position: absolute;
+        font-size: 36px;
+        left: 15px;
+        top: 0;
+        transform-origin: 0 0;
+        transform: rotate(-90deg) translateX(-110%);
+      }
 
-  .adv-title,
-  .contacts-title{
-    position: absolute;
-    top: 60px;
-    left: 0;
-    font-size: 36px;
-    font-family: 'Prata', serif;
-    margin-left: 15px;
-    padding-right:  200px;
-    border-top: 2px solid #eec643;
-    border-bottom: 2px solid #eec643;
-  }
 
-  .contacts-lil-title{
-    position: absolute;
-    top: 60px;
-    left: 50%;
-  }
+      .concerts-title{
+        transform: rotate(-90deg) translateX(-135%);
+      }
 
-  .adv-row,
-  .cont-row{
-    align-items: flex-end;
-  }
+      .adv-title,
+      .contacts-title{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        font-size: 36px;
+        font-family: 'Prata', serif;
+        margin-left: 15px;
+        padding-right:  200px;
+        border-top: 2px solid #eec643;
+        border-bottom: 2px solid #eec643;
+      }
 
-  .col--lg-1 { width: 25%; }
-  .col--lg-2 { width: 50%; }
-  .col--lg-3 { width: 75%; }
-  .col--lg-4 { width: 100%; }
-  .col--lg-s-none {
-    display: block;
-  }
+      .contacts-lil-title{
+        position: absolute;
+        top: 60px;
+        left: 50%;
+      }
 
-  .left{
-    padding-left: 96px;
-  }
+      .adv-row,
+      .cont-row{
+        align-items: flex-end;
+      }
 
-  .dir-inner{
-    height: 268px;
-  }
+      .col--lg-1 { width: 25%; }
+      .col--lg-2 { width: 50%; }
+      .col--lg-3 { width: 75%; }
+      .col--lg-4 { width: 100%; }
+      .col--lg-s-none {
+        display: block;
+      }
 
-  form{
-    position: relative;
-    display: block;
-  }
+      .left{
+        padding-left: 96px;
+      }
 
-  .first-lesson,
-  .first-lesson-horz{
-    display: none;
-  }
+      .dir-inner{
+        height: 268px;
+      }
 
-  .lil-view{
-    display: none;
-  }
+      form{
+        position: relative;
+        display: block;
+      }
 
-  .all-dir-big{
-    display: block;
-  }
+      .first-lesson,
+      .first-lesson-horz{
+        display: none;
+      }
 
-  .all-dir-small{
-    display: none;
-  }
+      .lil-view{
+        display: none;
+      }
 
-  .adv-inner-small{
-    height: 460px;
+      .all-dir-big{
+        display: block;
+      }
+
+      .all-dir-small{
+        display: none;
+      }
+
+      .adv-inner-small{
+        height: 460px;
    /* background-repeat: no-repeat;
     background-size: 100%;
     */
@@ -583,6 +677,11 @@
   .lil-map{
     margin-top: 0px;
   }
+
+  .toggler{
+    display: none;
+  }
+
 
 }
 
