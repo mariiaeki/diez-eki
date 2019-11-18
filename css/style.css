@@ -37,8 +37,9 @@
 
   .head-bg{
     background-image: url(img/bg_main_mobile.jpg);
-    background-size: 100%;
     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
   }
 
   footer{
@@ -213,9 +214,10 @@
 
   .dir-inner{
     position: relative;
-    height: 144px;
+    min-height: 144px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   form{
@@ -251,9 +253,10 @@
   .adv-inner-small{
     position: relative;
     color: #FFF;
-    height: 144px;
+    min-height: 144px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-color: #eec643;
 
   }
@@ -266,9 +269,10 @@
 
   .adv-inner-big{
     color: #FFF;
-    height: 144px;
+    min-height: 144px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 
   }
 
@@ -336,6 +340,7 @@
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     padding-left: 30px;
+    padding-bottom: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -350,10 +355,15 @@
       color: black;
       font-size: 16px;
       padding: 0;
-      bottom: 50px;
+      bottom: 55px;
       left: -15px;
 
     }
+
+   /* .lil-inner{
+      height: 100%;
+      background-color: #eec643;
+    }*/
 
     .big-p{
       display: none;
@@ -511,7 +521,7 @@
       }
 
       .dir-inner{
-        height: 268px;
+        min-height: 268px;
       }
 
       form{
@@ -537,7 +547,7 @@
       }
 
       .adv-inner-small{
-        height: 460px;
+        min-height: 460px;
    /* background-repeat: no-repeat;
     background-size: 100%;
     */
@@ -545,14 +555,14 @@
 
   .adv-inner-big{
     color: #FFF;
-    height: 560px;
+    min-height: 560px;
     background-repeat: no-repeat;
     background-size: 100%;
 
   }
 
   .adv-inner-form{
-    height: 560px;
+    min-height: 560px;
   }
 
   .conc-inner-big{
@@ -638,9 +648,13 @@
 
   .fieldset{
     border: transparent;
-    height: 100%;
+    min-height: 560px;
     padding: 30px;
     padding-top: 0;
+  }
+
+  .fieldset-main{
+    min-height: 360px;
   }
 
   .fieldset h3{
